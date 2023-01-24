@@ -83,7 +83,127 @@ p{
     margin:30px 0;
     border-radius: 50px;
     transition: background-color 0.5s;
+    -webkit-animation: breathing 2s ease-out infinite normal;
 }
+/* Breathing animation for button */
+@-webkit-keyframes breathing {
+    0% {
+      -webkit-transform: scale(0.9);
+      transform: scale(0.9);
+    }
+    10% {
+      -webkit-transform: scale(.95);
+      transform: scale(.95);
+    }
+    20% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+    30% {
+        -webkit-transform: scale(1.05);
+        transform: scale(1.05);
+    }
+    40% {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+    50% {
+        -webkit-transform: scale(1.15);
+        transform: scale(1.15);
+    }
+    60% {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }    
+    70% {
+        -webkit-transform: scale(1.05);
+        transform: scale(1.05);
+    }    
+    80% {
+          -webkit-transform: scale(1);
+          transform: scale(1);
+    }  
+    90% {
+        -webkit-transform: scale(.95);
+        transform: scale(.95);
+    }
+    100% {
+        -webkit-transform: scale(.9);
+        transform: scale(.9);
+    }
+  }
 .btn:hover {
     background-color: #563434;
+}
+/* ----- Featured category section ----- */
+.categories {
+    margin:70px 0;
+}
+
+.col-3 {
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+.col-3 img {
+    width:100%;
+}
+.small-container {
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+/* ----- Featured Products section ----- */
+.col-4 {
+    flex-basis: 22%;
+    padding:5px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+}
+.col-4 img {
+    width: 100%;
+}
+.title{
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+}
+.title::after {
+    content: '';
+    background: #ff523b;
+    width: 120px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+h4 {
+    color: #555;
+    font-weight: normal;
+}
+.col-4 img {
+    transition: border 0.5s;
+    border-radius: 5px;
+}
+.col-4 p {
+    font-size: 14px;
+}
+.rating i {
+    color: #ff523b;
+}
+.col-4:hover {
+    transform: translateY(5px);
+}
+.col-4:hover img{
+    border: 1px solid #ff523b;
+}
+.products-container {
+    max-width: 2000px;
+    margin: auto;
 }
