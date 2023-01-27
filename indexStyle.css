@@ -219,25 +219,31 @@ h4 {
 small{
     color: #555;
 }
-.col-2 a {
+.col-2 a{
     margin: 20px;
 }
 /* Testiomonial section */
-.testimonial {
+.testimonial{
     padding-top: 100px;
 }
-.testimonial col-3 {
+.testimonial .col-3{
     text-align: center;
     padding: 40px 20px;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
     cursor: pointer;
-    transition: transform 0.5s;
+    border-radius: 2%;
+    transition: all 0.5s;
+    transition-property: transform, border;
 }
-.testimonial col-3 img {
+.testimonial .col-3 img{
     width: 50px;
     margin-top: 20px;
     border-radius: 50%;
 }
-.testimonial col-3:hover {
+.testimonial .col-3:hover {
     transform: translateY(-10px);    
+    border: 1px solid #ff523b;
+}
+.testimonial .col-3 p {
+    margin: 0 20px;
 }
