@@ -88,48 +88,48 @@ p{
 /* Breathing animation for button */
 @-webkit-keyframes breathing {
     0% {
-      -webkit-transform: scale(0.9);
-      transform: scale(0.9);
+      -webkit-transform: scale(0.975);
+      transform: scale(0.975);
     }
     10% {
-      -webkit-transform: scale(.95);
-      transform: scale(.95);
-    }
-    20% {
       -webkit-transform: scale(1);
       transform: scale(1);
+    }
+    20% {
+      -webkit-transform: scale(1.025);
+      transform: scale(1.025);
     }
     30% {
         -webkit-transform: scale(1.05);
         transform: scale(1.05);
     }
     40% {
-      -webkit-transform: scale(1.1);
-      transform: scale(1.1);
+      -webkit-transform: scale(1.075);
+      transform: scale(1.075);
     }
     50% {
-        -webkit-transform: scale(1.15);
-        transform: scale(1.15);
+        -webkit-transform: scale(1.10);
+        transform: scale(1.10);
     }
     60% {
-        -webkit-transform: scale(1.1);
-        transform: scale(1.1);
+        -webkit-transform: scale(1.075);
+        transform: scale(1.075);
     }    
     70% {
         -webkit-transform: scale(1.05);
         transform: scale(1.05);
     }    
     80% {
-          -webkit-transform: scale(1);
-          transform: scale(1);
+          -webkit-transform: scale(1.025);
+          transform: scale(1.025);
     }  
     90% {
-        -webkit-transform: scale(.95);
-        transform: scale(.95);
+        -webkit-transform: scale(1);
+        transform: scale(1);
     }
     100% {
-        -webkit-transform: scale(.9);
-        transform: scale(.9);
+        -webkit-transform: scale(.975);
+        transform: scale(.975);
     }
   }
 .btn:hover {
@@ -206,4 +206,38 @@ h4 {
 .products-container {
     max-width: 2000px;
     margin: auto;
+}
+/* Offer section */
+.offer{
+    background:radial-gradient(#fff, #ffd6d6);
+    margin-top: 80px;
+    padding: 30px 0;
+}
+.col-2 .offer-img{
+    padding: 50px;
+}
+small{
+    color: #555;
+}
+.col-2 a {
+    margin: 20px;
+}
+/* Testiomonial section */
+.testimonial {
+    padding-top: 100px;
+}
+.testimonial col-3 {
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+.testimonial col-3 img {
+    width: 50px;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+.testimonial col-3:hover {
+    transform: translateY(-10px);    
 }
