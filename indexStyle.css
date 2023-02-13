@@ -4,25 +4,15 @@
     margin: 0px;
     box-sizing: border-box;
 }
-
-
 body {
     font-family: 'Poppins', sans-serif;
 }
 /*All header contents including container itself */
 .header {
-    background: radial-gradient(#fff,#F5DEB3);
+    background: radial-gradient(#fff,#ffd6d6);
 }
 .header .row {
     margin-top: 50px;
-}
-.logo {
-    margin: auto;
-}
-.logo img {
-    height: 150px;
-    width: 1000px;
-    padding: auto;
 }
 /* Container hold all header content */
 .container {
@@ -37,16 +27,14 @@ body {
 }
 .navbar {
     display: flex;
-    align-items:flex-start;
-
-    padding-top: 20px;
+    align-items: center;
+    padding: 2;
 
 }
 
 nav{
     flex: 1;
-    text-align: center;
-    padding-top: 20px;
+    text-align: right;
 }
 nav ul {
     display: inline-block;
@@ -54,7 +42,11 @@ nav ul {
 }
 nav ul li{
     display: inline-block;
-    margin-right: 80px;
+    margin-right: 20px;
+}
+#navbar-cart-img {
+    height:30px;
+    width: 30px;
 }
 a{
     text-decoration: none;
@@ -76,21 +68,18 @@ p{
 }
 .col-2 img {
     max-width: 100%;
-    max-height: 600px;
-    margin-left: 20%;
-    padding: 20px 0;
+    padding: 50px 0;
 }
 .col-2 h1 {
     font-size: 50px;
     line-height: 60px;
-    margin: 10px 0;
-    padding-bottom: 30px;
+    margin: 25px 0;
 }
 .btn {
     display: inline-block;
-    background-color: #8B4513;
+    background-color: #ff523b;
     color: white;
-    padding: 5px 30px;
+    padding: 8px 30px;
     margin:30px 0;
     border-radius: 50px;
     transition: background-color 0.5s;
@@ -146,20 +135,35 @@ p{
 .btn:hover {
     background-color: #563434;
 }
+/* ----- Featured category section ----- */
+.categories {
+    margin:70px 0;
+}
 
-/* ----- Classes ----- */
-.col-6 {
-    flex-basis: 13%;
+.col-3 {
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+.col-3 img {
+    width:100%;
+}
+.small-container {
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+/* ----- Featured Products section ----- */
+.col-4 {
+    flex-basis: 22%;
     padding:5px;
     min-width: 200px;
     margin-bottom: 50px;
     transition: transform 0.5s;
 }
-.col-6 img {
+.col-4 img {
     width: 100%;
-    height: 300px;
-    transition: border 0.5s;
-    border-radius: 5px;
 }
 .title{
     text-align: center;
@@ -170,7 +174,7 @@ p{
 }
 .title::after {
     content: '';
-    background: #8B4513;
+    background: #ff523b;
     width: 120px;
     height: 5px;
     border-radius: 5px;
@@ -181,73 +185,31 @@ p{
 }
 h4 {
     color: #555;
-    font-weight:600;
+    font-weight: normal;
 }
-.col-6 h4{
-    text-align: center;
+.col-4 img {
+    transition: border 0.5s;
+    border-radius: 5px;
 }
-.col-6 p{
-    text-align: center;
-    font-size: 12px;
+.col-4 p {
+    font-size: 14px;
 }
-.col-6:hover img{
-    border: 1px solid #8B4513;
+.rating i {
+    color: #ff523b;
 }
-.col-6:hover {
+.col-4:hover {
     transform: translateY(5px);
+}
+.col-4:hover img{
+    border: 1px solid #ff523b;
 }
 .products-container {
     max-width: 2000px;
     margin: auto;
 }
-/* Maps Selection */
-.col-3 {
-    flex-basis: 30%;
-    padding:5px;
-    min-width: 200px;
-    margin-bottom: 50px;
-    transition: transform 0.5s;
-}
-.col-3 img {
-    width: 100%;
-    height: 300px;
-    transition: border 0.5s;
-    border-radius: 5px;
-}
-.title{
-    text-align: center;
-    margin: 0 auto 80px;
-    position: relative;
-    line-height: 60px;
-    color: #555;
-}
-.title::after {
-    content: '';
-    background: #8B4513;
-    width: 120px;
-    height: 5px;
-    border-radius: 5px;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-}
-h4 {
-    color: #555;
-    font-weight:600;
-}
-.col-3 p{
-    font-size: 12px;
-}
-.col-3:hover img{
-    border: 1px solid #8B4513;
-}
-.col-3:hover {
-    transform: translateY(5px);
-}
 /* Offer section */
 .offer{
-    background:radial-gradient(#fff, #F5DEB3);
+    background:radial-gradient(#fff, #ffd6d6);
     margin-top: 80px;
     padding: 30px 0;
 }
@@ -280,7 +242,7 @@ small{
 }
 .testimonial .col-3:hover {
     transform: translateY(-10px);    
-    border: 1px solid #8B4513;
+    border: 1px solid #ff523b;
 }
 .testimonial .col-3 p {
     margin: 0 20px;
